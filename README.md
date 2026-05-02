@@ -29,26 +29,26 @@ Time series decomposition (trend, seasonality, residuals)
 
 Models Used
 
- ARIMA Model
-Applied first order differencing to make the data suitable for model
-Parameter selection using ACF and PACF analysis
-Hyperparameter Tuning selected Best final model ARIMA(0,1,0)
-Captured flat line which is predicting same observed value
-Limitation: Cannot capture sudden price changes
+ARIMA Model
+- Applied first order differencing to make the data suitable for model
+- Parameter selection using ACF and PACF analysis
+- Hyperparameter Tuning selected Best final model ARIMA(0,1,0)
+- Captured flat line which is predicting same observed value
+- Limitation: Cannot capture sudden price changes
 
 
 LSTM Model
-Sequence-based deep learning model
-Input as 60 time steps
+- Sequence-based deep learning model
+- Input as 60 time steps
 Architecture:
-used 2 LSTM layers with 50 units each and dropout of 0.2 and a Dense output layer
-Model trained on Adam optimizer with MSE loss function 
+- used 2 LSTM layers with 50 units each and dropout of 0.2 and a Dense output layer
+- Model trained on Adam optimizer with MSE loss function 
 
 Model Evaluation
 
-Model	MAE	RMSE	MAPE
-ARIMA	466.92	577.49	0.70%
-LSTM	64.41	94.64	0.09%
+- Model	MAE	RMSE	MAPE
+- ARIMA	466.92	577.49	0.70%
+- LSTM	64.41	94.64	0.09%
 
 
 
