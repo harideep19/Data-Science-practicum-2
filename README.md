@@ -46,9 +46,9 @@ Architecture:
 
 Model Evaluation
 
-- Model	MAE	RMSE	MAPE
-- ARIMA	466.92	577.49	0.70%
-- LSTM	64.41	94.64	0.09%
+- Model   	MAE	    RMSE	      MAPE
+- ARIMA	   466.92	  577.49	    0.70%
+- LSTM	   64.41	  94.64	      0.09%
 
 
 
