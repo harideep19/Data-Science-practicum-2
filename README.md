@@ -55,3 +55,21 @@ Model Evaluation
 Conclusion
 
 LSTM outperforms ARIMA for cryptocurrency forecasting due to its ability to capture complex patterns and volatility. ARIMA works well as a baseline but is limited for real-time dynamic data.
+
+
+
+How to Run
+
+- clone repository
+- git clone https://github.com/harideep19/Data-Science-practicum-2.git
+- Select Notebook file
+- Install Required Libraries
+
+Run the project
+Run all cells step by step to perform:
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- ARIMA model training
+- LSTM model training
+- Model evaluation
+- Results
