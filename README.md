@@ -9,10 +9,10 @@ This project focuses on forecasting Bitcoin prices using two different approach'
 
 Dataset
 
-Source        - Binance API
-Data type     - 1 miniute interval
-Duration      - 60 days
-Features used - Open, High , Low , close
+- source  Binance API  
+- Data type  1-minute interval Bitcoin data  
+- Duration: ~60 days
+- Features used  open ,high , low and valume
 
 Data preprocessing
 
