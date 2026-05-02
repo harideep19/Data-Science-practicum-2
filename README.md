@@ -46,9 +46,11 @@ Model trained on Adam optimizer with MSE loss function
 
 Model Evaluation
 
-Model	MAE	RMSE	MAPE
-ARIMA	466.92	577.49	0.70%
-LSTM	64.41	94.64	0.09%
+Model	
+ARIMA	
+MAE	RMSE	MAPE - 466.92	577.49	0.70%
+LSTM	
+MAE	RMSE	MAPE - 64.41	94.64	0.09%
 
 
 Conclusion
