@@ -145,6 +145,22 @@ Conclusion
 This project compares five forecasting models for bitcoin price prediction and ARIMA(2,1,2) results lower error values among all other models also Multi-Horizon analysis shows as horizon increases error values are increasing.External market indicators improves bitcoin predictions compared with BTC only LSTM
 
 
+## Summary of Findings
+
+| # | Finding | Detail |
+|---|---|---|
+| 1 | **ARIMA is the best model** | ARIMA(2,1,2) achieved MAE=$30.18, MAPE=0.043% — lowest across all 5 models |
+| 2 | **Fair evaluation** | Original submission compared multi-step ARIMA to 1-step LSTM (unfair) — corrected with rolling 1-step for all models |
+| 3 | **True 15-day test** | All models trained on ~45 days and evaluated on the final 15 days — genuine out-of-sample |
+| 4 | **Prophet fails completely** | MAE=$8,898 — 295× worse than ARIMA; structured seasonality is wrong for high-frequency crypto |
+| 5 | **ARIMA beats LSTM at all horizons** | At H=1,5,10,30 min ARIMA MAE is lower than LSTM — linear structure generalises better at 1-min scale |
+| 6 | **3-hr window peaks at H=10 min** | W=180 LSTM reaches 53.7% directional accuracy at H=10 min; H=30 drops to 47.3% (below random) |
+| 7 | **Features add noise at 1-min** | Multivariate LSTM (MAE=$55.22) is worse than univariate (MAE=$46.12); extra features hurt, not help |
+| 8 | **Hybrid = ARIMA** | Hybrid ARIMA+LSTM produces identical MAE=$30.18 — ARIMA residuals are white noise, LSTM learns nothing |
+| 9 | **NASDAQ strongest BTC correlate** | Daily return correlation = 0.617; Gold = 0.076, DXY = -0.127 |
+| 10 | **No meaningful Granger causality** | Gold shows marginal significance at lag 3 only (p=0.017); NASDAQ and DXY not significant |
+| 11 | **Multi-market LSTM modest improvement** | Multi-market MAE=$2,132 vs BTC-only MAE=$2,288 (6.8% better); naive baseline still wins at $1,867 |
+
 
 
 
